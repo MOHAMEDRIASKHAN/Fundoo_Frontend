@@ -1,0 +1,4 @@
+<app-create-note (refreshEventCreate)="receiverRefreshEventCreate($event)"></app-create-note>
+<app-displaynotes [notelist]="noteArray" (refreshEventFromDisplaytoGetall)="receivedRefreshEventFromDisplaytoGetall($event)"
+(updateAutoRefresh)="receivedRefreshEventFromDisplaytoGetall($event)"></app-displaynotes>
+

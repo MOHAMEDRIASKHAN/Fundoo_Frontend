@@ -1,0 +1,101 @@
+// .remindme{
+//     background-color: transparent;
+//     outline-color: transparent;
+//     top: 100px;
+//     size: 10px;
+    
+// }
+
+.remindme{
+    top: -50px;
+    right: 110px;
+    
+}
+.collaborator{
+    top: -50px;
+    right: 110px;
+}
+.backgroundoptions{
+    position: relative;
+    top: -55px;
+    right: 110px;
+    outline: white;
+    background-color: transparent;
+    outline-color: transparent;
+   // size: 10px;
+   outline-style: none;
+   outline: 100px;
+}
+.palette{
+    height: 25px;
+    width: 30px;
+}
+.addimage{
+    top: -50px;
+    right: 110px;
+}
+.archive{
+    position: relative;
+    top: -55px;
+    right: 120px;
+    outline: white;
+    background-color: transparent;
+    outline-color: transparent;
+   // size: 10px;
+   outline-style: none;
+   outline: 100px;
+   height: 0px;
+   width: 0px;
+}
+.archiveicon{
+    height: 25px;
+    width: 30px;
+}
+.more{
+    position: relative;
+    top: -55px;
+    right: 125px;
+    outline: white;
+    background-color: transparent;
+    outline-color: transparent;
+   // size: 10px;
+   outline-style: none;
+   outline: 100px;
+   height: 0px;
+   width: 0px;
+}
+.icon{
+    height: 25px;
+    width: 30px;
+}
+// .undo{
+//     top: -50px;
+//     right: 110px;
+// }
+// .redo{
+//     top: -50px;
+//     right: 110px;
+// }
+.closebu{
+    top: -58px;
+    right: -120px;
+}
+.palettebox{
+    display: flex;
+   // box-sizing: border-box;
+    flex-direction: row;
+    position: relative;
+    width: 20px;
+    height: 100px;
+
+}
+.colorbutton{
+    height: 40px;
+    width: 50px;
+    //border: 0 blue;
+    justify-content: space-between;
+    display: flex;
+   // justify-content: space-around;
+    padding-left: 12px;
+   border-radius: 200px;
+}

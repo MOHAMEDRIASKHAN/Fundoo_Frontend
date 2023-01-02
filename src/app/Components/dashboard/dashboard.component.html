@@ -1,0 +1,69 @@
+     <mat-toolbar style="background-color: white;" >
+          <mat-toolbar-row>
+         <button mat-icon-button (click)="opened=!opened" class="menu" >
+          <mat-icon>menu</mat-icon>
+        </button>
+        <div>
+            <img class="logo" src="https://www.gstatic.com/images/branding/product/1x/keep_2020q4_48dp.png" style="width:40px;height:40px">
+        </div>
+        <span>Fundoo</span>  
+        <div class="serach">
+          <input class="serach_" placeholder="Search" type="text" width="10px">
+      </div> 
+        <button mat-icon-button class="refersh" >
+          <mat-icon>refresh </mat-icon>        
+        </button>
+        <button mat-icon-button class="view">
+          <img src="../../../assets/view_agenda_FILL0_wght400_GRAD0_opsz48.png" height="26px" width="26px"/>
+        </button>
+        <button mat-icon-button class="setting">
+          <img src="../../../assets/settings_FILL0_wght400_GRAD0_opsz48.png"/>
+        </button>
+        <button mat-icon-button class="apps">
+          <img src="../../../assets/apps_FILL0_wght400_GRAD0_opsz48.png"/>
+        </button>
+        <button mat-icon-button class="profile">
+          <img src="../../../assets/account_circle_FILL0_wght400_GRAD0_opsz48.png"/>
+        </button>
+           </mat-toolbar-row>      
+      </mat-toolbar>
+      <mat-sidenav-container class="sidenav">
+        <mat-sidenav [(opened)]="opened" mode="side" >
+        <mat-list>
+            <div role="button" >
+              <button class="demo" mat-icon-button routerLink="/Dashboard/getnote">
+              <img  src="../../../assets/lightbulb_FILL0_wght400_GRAD0_opsz48.png" width="30" height="30"/>
+             </button>
+             <span class="Note"> Notes </span>
+            </div>
+            <div role="button" >
+              <button class="demo " mat-icon-button>
+                <img  src="../../../assets/notifications_FILL0_wght400_GRAD0_opsz48.png" width="30" height="30"/>
+               </button>
+               <span class="Reminder"> Reminders </span>
+              </div>
+            <div role="button" >
+              <button class="demo " mat-icon-button>
+                <img  src="../../../assets/edit_FILL0_wght400_GRAD0_opsz48.png" width="30" height="30" /> 
+              </button>
+              <span class="Edit_lables"> Edit labels </span>
+            </div>
+            <div role="button" >
+              <button class="demo " mat-icon-button routerLink="/Dashboard/Archive">
+                <img  src="../../../assets/archive_FILL0_wght400_GRAD0_opsz48.png" width="30" height="30"/> 
+              </button>
+              <span class="Archieve"> Archieve </span>
+            </div>
+            <div role="button" >
+              <button class="demo" mat-icon-button routerLink="/Dashboard/Trash">
+                <img  src="../../../assets/delete_FILL0_wght400_GRAD0_opsz48.png" width="30" height="30" />
+              </button>
+              <span class="Trash"> Trash </span>
+            </div>
+        </mat-list>
+      </mat-sidenav>
+      <mat-sidenav-content>
+        <router-outlet></router-outlet>
+
+      </mat-sidenav-content>
+      </mat-sidenav-container>

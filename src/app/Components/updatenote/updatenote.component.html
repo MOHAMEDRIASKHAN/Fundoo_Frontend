@@ -1,0 +1,18 @@
+<div class="boxx">
+    <div class="titleupd">
+        <mat-card-title><input class="tit" type="text" matInput [(ngModel)]="title">
+        </mat-card-title>
+    </div>
+    <div class="bodyupd">
+        <input class="bodyy" type="text" matInput [(ngModel)]="body">
+    </div>
+    <div >
+        <app-icon class="iconupd"></app-icon>
+    </div>
+    <div>
+        <button class="closeupd" mat-button (click)="closedialog()">close</button>
+        <button class="pinnotesupd" mat-icon-button >
+            <img  src="../../../assets/push_pin_FILL0_wght400_GRAD0_opsz48.png"/>
+          </button> 
+    </div>
+</div>

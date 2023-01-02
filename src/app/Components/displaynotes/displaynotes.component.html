@@ -1,0 +1,13 @@
+<div *ngFor ="let note of notelist" class="card">
+ <mat-card class="notescontainer" [style.background]="note.color">
+    <mat-card-title class="title" mat-input (click)="editNoteDialogBox(note)" >{{note.title}}
+    </mat-card-title>
+    <mat-card-content>
+      <div role="textbox" class="text" style="min-height:35px; display: block; overflow-wrap:break-word;" (click)="editNoteDialogBox(note)">{{note.body}}</div>
+     </mat-card-content>
+    <div class="icon">
+      <app-icon class="icons" [noteObject]="note" (refreshEvent)="receivedRefreshEvent($event)"></app-icon>
+      <button class="closedis"mat-button>close</button>
+    </div>
+ </mat-card>
+</div> 

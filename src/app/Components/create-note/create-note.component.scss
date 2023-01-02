@@ -1,0 +1,114 @@
+.box{
+     padding: 8px 20px;
+     border-radius: 8px;
+      box-sizing: border-box;
+     width: 500px;
+     height: 45px;
+      margin:20px auto 5px auto;
+     position: relative;
+     top: 20px;
+     left: 110px;
+    
+   }
+   .outernotes{
+    position: relative;
+    width: 800px;
+   }
+   .Search{
+    // width: 312px;
+     border: none;
+     border: transparent;
+     position: relative;
+     top: -17px;
+     border: 0px;
+     box-shadow: 0 3px 3px 3px rgb(222, 222, 222);
+    padding: 8px 20px;
+    border-radius: 8px;
+     box-sizing: border-box;
+    width: 600px;
+    height: 45px;
+     margin:20px auto 5px auto;
+    position: relative;
+    right: 115px;
+    top:-50px;
+    font-size: 16px;
+   }
+   .NewList{
+    bottom: 40px;
+    right: 280px;
+   }
+   .NewNotewithDrawing{
+    bottom: 40px;
+    right: 280px;
+   }
+   .NewNotewithImage{
+    bottom: 40px;
+    right: 280px;
+   }
+   .innerbox{
+    padding: 8px 20px;
+     border-radius: 8px;
+    // box-sizing: border-box;
+    //box-shadow: 0 3px 3px 3px rgb(222, 222, 222);
+     //cursor: pointer;
+     width: 500px;
+     height: 200px;
+     margin:20px auto 5px auto;
+     position: relative;
+     top: 35px;
+     left: 110px;
+
+     
+   }
+  .title{
+    border: none;
+    border: transparent;
+    position: relative;
+    top: -17px;
+    border: 0px;
+    box-shadow: 0 3px 3px 3px rgb(222, 222, 222);
+   padding: 8px 20px;
+   border-radius: 8px;
+    box-sizing: border-box;
+   width: 600px;
+   height: 45px;
+    margin:20px auto 5px auto;
+   position: relative;
+   right: 115px;
+   top:-50px;
+   font-size: 16px;
+  }
+  .Body{
+   // border: none;
+   // border: transparent;
+    position: relative;
+    top: -17px;
+    border: 0px;
+    box-shadow: 0 3px 3px 3px rgb(222, 222, 222);
+   padding: 8px 20px;
+   border-radius: 8px;
+    box-sizing: border-box;
+   width: 600px;
+   height: 45px;
+    margin:20px auto 5px auto;
+   position: relative;
+   right: 115px;
+   top:-74px;
+   font-size: 16px;
+  }
+  .pinnotes{
+    left: 420px;
+    top :-220px
+  }
+  .closebu{
+    left: 350px;
+    top: -110px;
+  }
+  .undo{
+    top: -50px;
+    right: 120px;
+}
+.redo{
+    top: -50px;
+    right: 120px;
+}

@@ -1,0 +1,32 @@
+  <button class="remindme" mat-icon-button >
+    <img src="../../../assets/add_alert_FILL0_wght400_GRAD0_opsz48.png"/>
+  </button> 
+  <button class="collaborator" mat-icon-button >
+    <img src="../../../assets/person_add_FILL0_wght400_GRAD0_opsz48.png"/>
+  </button> 
+  <button class="backgroundoptions" mat-button>
+    <img class="palette" [matMenuTriggerFor]="palettemenu" src="../../../assets/palette_FILL0_wght400_GRAD0_opsz48.png"/>
+  </button> 
+  <button class="addimage" mat-icon-button >
+    <img src="../../../assets/image_FILL0_wght400_GRAD0_opsz48 (1).png"/>
+    </button>
+    <button class="archive" mat-button (click)="Archivedone()">
+        <img class="archiveicon"src="../../../assets/archive_FILL0_wght400_GRAD0_opsz48 (1).png"/>
+    </button> 
+  <button class="more" mat-button>
+    <img class="icon" [matMenuTriggerFor]="moree" src="../../../assets/more_vert_FILL0_wght400_GRAD0_opsz48.png"/>
+  </button>
+       <mat-menu #moree="matMenu" > 
+      <button mat-menu-item (click)="Delete()">Delete note</button>
+      <button mat-menu-item>Add label</button>
+      <button mat-menu-item>Add drawing</button>
+      <button mat-menu-item>Make a copy</button>
+      <button mat-menu-item>show checkboxes</button>
+      <button mat-menu-item>Copy to Google Docs</button>
+    </mat-menu>
+    
+    <mat-menu #palettemenu="matMenu" class="palettebox">
+      <div *ngFor = 'let color of colorArray'>
+        <button class="colorbutton" (click)="selectColor(color)"></button>
+      </div>
+    </mat-menu>

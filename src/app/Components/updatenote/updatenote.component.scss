@@ -1,0 +1,50 @@
+.boxx{
+    position: relative;
+    width: 500px;
+    height: 200px;
+}
+.titleupd{
+    border: none;
+    border: transparent;
+    position: relative;
+    border: 0px;
+    //box-shadow: 0 3px 3px 3px rgb(222, 222, 222);
+   padding: 8px 20px;
+  // border-radius: 8px;
+    box-sizing: border-box;
+  // width: 600px;
+   height: 45px;
+    margin:20px auto 5px auto;
+   position: relative;
+   right: 0px;
+   //top:-50px;
+   font-size: 16px;
+}
+.tit{
+    position: relative;
+    width: 300px;
+    height: 30px;
+    outline-color: transparent;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+.bodyy{
+    position: relative;
+    width: 300px;
+    height: 20px;
+    outline-color: transparent;
+    right: -20px;
+}
+.iconupd{
+    position: relative;
+    top: 100px;
+    left: 120px;
+}
+.closeupd{
+    left: 400px;
+    top: -8px;
+}
+.pinnotesupd{
+    left: 400px;
+    top: -150px;
+}

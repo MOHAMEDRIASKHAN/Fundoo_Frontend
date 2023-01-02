@@ -1,0 +1,33 @@
+.card{
+    display: flex;
+     display: table-row;
+     position: relative;
+     left: 30px;
+}
+
+.notescontainer{
+    padding: 8px 20px;
+    border-radius: 8px;
+   // box-sizing: border-box;
+    box-shadow: 0 3px 3px 3px rgb(222, 222, 222);
+    //cursor: pointer;
+    width: 400px;
+    height: 120px;
+    margin:20px auto 5px auto;
+    position: relative;
+    top: 100px;
+    right:0px;
+}
+.delfor{
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+.restore{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+   
+
+}

@@ -1,0 +1,38 @@
+<div class="Container"> 
+    <mat-card class="Heading">
+      <div class="Logo-Name">
+        <span style="color: blue;">F</span>
+        <span style="color: Red;">U</span>
+        <span style="color: yellow;">N</span>
+        <span style="color: blue;">D</span>
+        <span style="color: green;">O</span>
+        <span style="color: red;">O</span>
+      </div>
+        <!-- <mat-card-content></mat-card-content> -->
+        <div>
+        <h1 class="Firstheading">Sign in</h1>
+        </div>
+        <div>
+          <h4 class="Fourthheading">Use your Fundoo Account</h4>
+        </div>
+        <form class="Detail" [formGroup]="loginform" (ngSubmit)="loginSubmit()">
+        <div class="LoginDetails">
+            <mat-form-field appearance="outline">
+              <mat-label>Email or Phone</mat-label>
+              <input matInput placeholder="email" formControlName="email">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Password</mat-label>
+                <input matInput placeholder="password" formControlName="password">
+            </mat-form-field>
+        </div>
+        <div class="forgotemail">
+              <a routerLink="/Forgot"mat-button  class="forgot" color="primary">Forgot Email?</a>
+        </div>
+        <div class="Forget">
+             <a routerLink="/Register" mat-button class="create" color="primary">Create Account</a>
+             <button class="next" mat-raised-button color="primary">Next</button>
+        </div>
+      </form>
+      </mat-card>
+</div>

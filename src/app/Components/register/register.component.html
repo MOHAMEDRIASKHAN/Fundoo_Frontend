@@ -1,0 +1,69 @@
+<div class="Container">
+    <mat-card class="Header">
+      <div class="Logo-name">
+        <h1>
+            <span style="color: blue;">F</span>
+            <span style="color: red;">U</span>
+            <span style="color: yellow;">N</span>
+            <span style="color: blue;">D</span>
+            <span style="color: green;">O</span>
+            <span style="color: red;">O</span>
+        </h1>
+      </div>
+      <div>
+        <h1 class="secondhead"> Create your Fundoo Account</h1>
+      </div>
+        <form class="Main" [formGroup]="Reginform" (ngSubmit)="ReginSumbit()" >
+          <div class="name">
+            <mat-form-field appearance="outline">
+                <mat-label>First Name</mat-label>
+                <input matInput placeholder="Firstname" formControlName="firstName">
+                <mat-error>Enter First Name</mat-error>
+              </mat-form-field>
+              <mat-form-field appearance="outline">
+                  <mat-label>Last Name</mat-label>
+                  <input matInput placeholder="Lastname" formControlName="lastName">
+                  <mat-error>Enter Last Name</mat-error>
+              </mat-form-field>
+      </div>
+      <div class="SecMain" >
+              <mat-form-field class="field"appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput placeholder="Enter your Email" formControlName="emailID">
+                <mat-error>Give your Correct Email</mat-error>
+            </mat-form-field>   
+      </div>
+    <div class="demo">
+    <a href="a_class" >Use my current email address instead</a>
+    </div>
+    <div class="ThirdMain">
+            <mat-form-field appearance="outline">
+                <mat-label>Password</mat-label>
+                <input type="password" matInput [type]="showPassword ? 'text' : 'password'" placeholder="password" formControlName="password">
+                <mat-error>give valid password</mat-error>
+              </mat-form-field>
+              <mat-form-field appearance="outline">
+                  <mat-label>Confirm Password</mat-label>
+                  <input type="password" matInput [type]="showPassword ? 'text' : 'password'" placeholder="Confirm Password">
+                  <mat-error>give correct confirm password</mat-error>
+              </mat-form-field>
+      </div>
+      <div>
+        <mat-hint class="b_class">Use 8 or more characters with a mix of letters, numbers & symbols</mat-hint> 
+      </div> 
+      <div class="checkbox">              
+        <mat-checkbox type="checkbox" color="primary" matsuffix (click)="itsShowyourPassword()">Show password</mat-checkbox>                 
+      </div>
+      <div class="c_class">
+        <a routerLink="/Demo" mat-button color="primary">Sign in instead </a>
+        <button class="next" mat-raised-button color="primary">Next</button>
+      </div>
+      <div class="image">
+        <img src="https://ssl.gstatic.com/accounts/signup/glif/account.svg" alt="" width="244" height="244" class="j9NuTc TrZEUc">
+      </div>
+      <div class="hint">
+        <mat-hint class="hint text">One account All  FundooNote working for you</mat-hint> 
+      </div>
+        </form>
+    </mat-card>
+</div>

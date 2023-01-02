@@ -1,0 +1,39 @@
+<div class="box">
+  <div *ngIf="notes; then outernotes else innernotes"></div>
+  <ng-template #outernotes>
+     <div class="outernotes">
+  <input class="Search"  type="text" placeholder="Take a note..." (click)="ClickSerachbar()">
+  <button class="NewList" mat-icon-button >
+    <img src="../../../assets/check_box_FILL0_wght400_GRAD0_opsz48.png"/>
+  </button> 
+  <button class="NewNotewithDrawing" mat-icon-button >
+    <img src="../../../assets/brush_FILL0_wght400_GRAD0_opsz48.png"/>
+  </button> 
+  <button class="NewNotewithImage" mat-icon-button >
+    <img src="../../../assets/image_FILL0_wght400_GRAD0_opsz48.png"/>
+  </button> 
+  </div>
+  </ng-template>
+  <ng-template #innernotes>
+     <form class="innernotes" [formGroup]="CreatenoteForm" (ngSubmit)="CreatenoteSumbit()">
+         <input class="title"  type="text" placeholder="Title" formControlName="title">
+          <div>
+         <input class="Body"type="text" placeholder="Take a note..." formControlName="body" >
+          </div>
+         <div>
+           <app-icon></app-icon>
+          
+          <button class="undo" mat-icon-button >
+            <img src="../../../assets/undo_FILL0_wght400_GRAD0_opsz48.png"/>
+          </button> 
+          <button class="redo" mat-icon-button >
+            <img src="../../../assets/redo_FILL0_wght400_GRAD0_opsz48.png"/>
+          </button>
+        </div>
+        <button class="pinnotes" mat-icon-button >
+          <img src="../../../assets/push_pin_FILL0_wght400_GRAD0_opsz48.png"/>
+        </button> 
+        <button class="closebu"mat-button>close</button>
+     </form>
+</ng-template>   
+</div>
